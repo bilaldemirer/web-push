@@ -8,6 +8,10 @@ let vapidKeys =  {
 
 push.setVapidDetails('mailto:bdemirer70@gmail.com', vapidKeys.publicKey, vapidKeys.privateKey)
 
-let sub = {};
+let sub = {
+    "endpoint":"https://fcm.googleapis.com/fcm/send/dwWAt5zOEyY:APA91bENB_r5kMOa4CcLFS0jnhnSPCLMRC2nsq3BqeabjP18XNPUKGrxcTted7AZfQ6rblFyQWfv-9uNSCuOe_nxSJ6d7YKUDmMzvTjVOwLOnqAt5aoHh96xu9erUZtr6ctuZcyvrylQ",
+    "expirationTime":null,
+    "keys":{"p256dh":"BDazjmscq8xw4FPAdOgzptflK5QyGkItqnXQQrn8TrOHQCtoR6Kjo-8eqwFovXBRh_2fzmqpzTTZoM9E7Si9fuc",
+    "auth":"7oOujWqxTaWtI4U2r0dHlg"}};
 
 push.sendNotification(sub, 'test message')
